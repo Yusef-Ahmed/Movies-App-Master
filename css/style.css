@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Breakpoints */
+  --breakpoint-xs: 301px;
+  --breakpoint-sm: 371px;
+  --breakpoint-md: 473px;
+  --breakpoint-lg: 775px;
+  --breakpoint-xl: 992px;
+  --breakpoint-2xl: 1081px;
+
+  /* Colors */
+  --color-main-color: #ff2c1f;
+  --color-text-color: #020307;
+  --color-bg-color: #fff;
+}
+
+:root {
+  /* Colors */
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* custom scroll bar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--text-color);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5rem;
+}
+/* custom scroll bar */
+
+/* Navbar */
+header.shadow .navbar a {
+  color: var(--text-color);
+}
+header.shadow .logo {
+  color: var(--text-color);
+}
+/* Navbar */
+
+/* Responsive */
+@media (max-width: 774px) {
+  header.shadow #menu-icon {
+    color: var(--text-color);
+  }
+}
+/* Responsive */
